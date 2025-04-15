@@ -22,7 +22,7 @@ class BankAccount:
 
         with self.lock:
             self.balance += amount
-            print(f"Deposited {amount}. New balance: {self.balance}".)
+            print(f"Deposited {amount}. New balance: {self.balance}")
 
     def withdraw(self, amount):
         self.__check_if_account_is_open()
