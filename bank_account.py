@@ -31,7 +31,7 @@ class BankAccount:
 
         with self.lock:
             self.balance -= amount
-            print(f"Withdrawed {amount}. New balance: {self.balance}".)
+            print(f"Withdrawed {amount}. New balance: {self.balance}")
 
     def get_balance(self):
         self.__check_if_account_is_open()
